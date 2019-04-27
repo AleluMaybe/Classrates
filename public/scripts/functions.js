@@ -1,9 +1,9 @@
 function submitComment(commentControl) {
     var comments = document.getElementsByName(commentControl)[0].value;
-    var subscriptionKey = "TEXT_ANALYTICS_API_KEY";
-    var url = "TEXT_ANALYTICS_ENDPOINT/sentiment";
+    var subscriptionKey = "T4128762706e54c0c9a5c17f5afb8b1e8";
+    var url = "https://francecentral.api.cognitive.microsoft.com/text/analytics/v2.0";
 
-    var payload = '{ "documents": [ { "language": "en-US", "id": "1", "text": "' + comments + '" }]}';
+    var payload = '{ "documents": [ { "language": "es-ES", "id": "1", "text": "' + comments + '" }]}';
 
     $.ajax({
         type: "POST",
